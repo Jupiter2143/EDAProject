@@ -55,7 +55,7 @@ At the same time, output the result to the file `output.txt`
 Other functions: display the coordinates corresponding to the current mouse position in the status bar
 
 ## Usage
-动画展示
+
 [Annimation](https://github.com/Jupiter2143/EDAProject)
 <p align="center">
     <img src="Documentation/demo.gif" width=100% />
