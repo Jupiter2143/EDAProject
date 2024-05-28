@@ -209,6 +209,21 @@ public class GUI extends JFrame {
           }
         });
     menuBar.add(fileMenu);
+    JMenu helpMenu = new JMenu("Help");
+    JMenuItem githubItem = new JMenuItem("GitHub");
+    helpMenu.add(githubItem);
+    githubItem.addActionListener(
+        e -> {
+          try {
+            Desktop.getDesktop()
+                .browse(new java.net.URI("https://github.com/Jupiter2143/EDAProject"));
+          } catch (Exception ex) {
+            JOptionPane.showMessageDialog(
+                frame, "Failed to open browser", "Error", JOptionPane.ERROR_MESSAGE);
+          }
+        });
+    menuBar.add(helpMenu);
+
     // menuBar.setBackground(Color.decode("#CAF4FF"));
   }
 
