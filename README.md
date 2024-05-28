@@ -42,12 +42,33 @@ Read input netlist file
     <img src="Documentation/init.png" width=100% />
 </p>
 
-可视化输出结果
 Visualize the output result
 <p align="center">
     <img src="Documentation/visual1.png" width=100% />
 </p>
 
-同时将结果输出到文件`output.txt`
 At the same time, output the result to the file `output.txt`
-![alt text](image.png)
+<p align="center">
+    <img src="Documentation/output.png" width=100% />
+</p>
+
+Other functions: display the coordinates corresponding to the current mouse position in the status bar
+
+## Usage
+动画展示
+[Annimation](https://github.com/Jupiter2143/EDAProject)
+<p align="center">
+    <img src="Documentation/demo.gif" width=100% />
+</p>
+
+## Compilation
+This `java` program uses the third-party library `EJML` (Efficient Java Matrix Library), please make sure that the library has been installed.
+
+Compile `java` files by yourself.
+
+## Code Structure
+| File Name   | Description               |
+| ----------- | ------------------------- |
+| `Main.java` | Entrance of the program   |
+| `EDA.java`  | Main logic of the program |
+| `GUI.java`  | GUI design of the program |

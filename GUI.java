@@ -5,7 +5,6 @@ import javax.swing.*;
 import org.ejml.simple.SimpleMatrix;
 
 public class GUI extends JFrame {
-  // 无向图可视化，带坐标
   private int padding = 25;
   private int tickSize = 5;
   private int pointSize = 10;
@@ -14,7 +13,7 @@ public class GUI extends JFrame {
   private JFrame frame = new JFrame("EDA Project");
   private int width = 650;
   private int height = 650;
-  private int M = 50; // 50*50的坐标系
+  private int M = 50;
   private int N = 50;
   private JMenuBar menuBar = new JMenuBar();
   private MyPanel panel = new MyPanel();
@@ -141,8 +140,6 @@ public class GUI extends JFrame {
         JOptionPane.showMessageDialog(
             frame, "Invalid input file", "Error", JOptionPane.ERROR_MESSAGE);
       }
-    } else {
-      System.exit(0);
     }
     return success;
   }
@@ -235,9 +232,6 @@ public class GUI extends JFrame {
 
   private void successOutput() {
     JOptionPane.showMessageDialog(
-        frame,
-        "Output successfully written to output.txt",
-        "Success",
-        JOptionPane.INFORMATION_MESSAGE);
+        frame, "Successfully save the result!", "Success", JOptionPane.INFORMATION_MESSAGE);
   }
 }
