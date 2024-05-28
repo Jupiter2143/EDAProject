@@ -14,11 +14,11 @@ Then, according to the adjacency matrix `C` and the pad position information `B`
 
 1. Initialize `A` as an `n*n` matrix
 2. For the row `i` representing the pad: 
-`A[i][j] = 1` if `j == i`
-`A[i][j] = 0` if `j != i`  
-1. For other rows `i`: 
-`A[i][j] = sum(C[i][j] for j in range(n))` if `i==j`
-`A[i][j] = -C[i][j]` if `i!=j`
+  + `A[i][j] = 1` if `j == i`
+  + `A[i][j] = 0` if `j != i`  
+3. For other rows `i`: 
+  + `A[i][j] = sum(C[i][j] for j in range(n))` if `i==j`
+  + `A[i][j] = -C[i][j]` if `i!=j`
 
 ```java
 for (int i = 0; i < A.getNumRows(); i++)
@@ -62,7 +62,7 @@ Other functions: display the coordinates corresponding to the current mouse posi
 </p>
 
 ## Compilation
-This `java` program uses the third-party library `EJML` (Efficient Java Matrix Library), please make sure that the library has been installed.
+This `java` program uses the third-party library [EJML](https://ejml.org/)(Efficient Java Matrix Library), please make sure that the library has been installed.
 
 Compile `java` files by yourself.
 
